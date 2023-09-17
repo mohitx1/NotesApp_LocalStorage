@@ -1,0 +1,128 @@
+.hidden {
+    display: none;
+}
+
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+} */
+
+/* Style the header */
+.heading {
+    background: linear-gradient(45deg, #ffcc00, #ff9900);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.heading h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Style the "Add Note" button */
+.btn-div {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.learn-more.add {
+    background: linear-gradient(45deg, #ff9900, #ff6600);
+    color: #fff;
+    border: yellow;
+    /* border-radius: 5px; */
+    padding: 16px 32px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.learn-more.add:hover {
+    background: linear-gradient(45deg, #ff6600, #ff3300);
+}
+
+/* Style the note container */
+.note {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    /* border-radius: 10px; */
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.note:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the buttons for edit and delete */
+.operation button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.operation button:hover {
+    color: #ff9900;
+}
+
+/* Style the textarea for notes */
+textarea {
+    width: 94%;
+    /* border: none; */
+    resize: vertical;
+    min-height: 120px;
+    padding: 12px;
+    font-size: 16px;
+    /* border-radius: 10px; */
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    border: 1px solid #dbc441;
+    font: inherit;
+}
+
+textarea:focus {
+    background-color: #f9f9f9;
+    border: 2px solid #ff9900;
+}
+/* Style the edit and delete buttons */
+.edit, .delete {
+    background-color: #ff9900; /* Red background color for delete button */
+    color: #ff9900; /* White text color */
+    border: none;
+    /* border-radius: 5px; */
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add a smooth transition for background color */
+}
+
+.edit {
+    background-color: #007bff; /* Blue background color for edit button */
+}
+
+/* Style the Font Awesome icons in the buttons */
+.edit i, .delete i {
+    font-size: 16px; /* Adjust the icon size */
+    margin-right: 5px; /* Add some spacing between the icon and text */
+}
+
+/* Change button background color on hover */
+.edit:hover, .delete:hover {
+    background-color: #ff9900; /* Darker red on hover for delete button */
+}
+
+/* Change icon color on hover */
+.edit:hover i, .delete:hover i {
+    color: #fff;
+}

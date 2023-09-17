@@ -2,3 +2,41 @@
     display:none
 }
 
+body{
+    padding: 0;
+    margin: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+button{
+    font:inherit;
+    border: 1px solid #dbc441;
+    color: #6200ff;
+    background: white;
+    border-radius: 3px;
+}
+
+button:hover,
+button:active{
+    background-color: #6200ff;
+    color:white;
+}
+
+textarea{
+    border: 1px solid #dbc441;
+    font: inherit;
+    border-radius: 2px;
+}
+
+.heading {
+    background-color: #dbc441;
+    color: #fff;
+    padding: 12px 20px;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.heading h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
