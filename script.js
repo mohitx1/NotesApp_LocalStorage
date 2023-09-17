@@ -1,5 +1,18 @@
 const addButton=document.querySelector('#add');
 
+update_LS_Data=()=>{
+    const textAreaData=document.querySelectorAll('textarea');
+    const notes=[];
+    // console.log(textAreaData);
+    textAreaData.forEach((note)=>{
+        return notes.push(note.value);
+    })
+    // console.log(notes);
+
+    //Setting into LocalStorage
+    localStorage.setItem('notes', JSON.stringify(notes));
+}
+
 const addNewNote=( text = '')=>{
 
     const note=document.createElement('div');
@@ -42,6 +55,8 @@ const addNewNote=( text = '')=>{
         const value =e.target.value;
         // console.log(value);
         mainDiv.innerHTML=value;
+
+        update_LS_Data();
     })
 
 
