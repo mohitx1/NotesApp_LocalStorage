@@ -7,14 +7,9 @@ body, h1, h2, h3, p {
     padding: 0;
 }
 
-/* body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f5f5f5;
-} */
-
 /* Style the header */
 .heading {
-    background: linear-gradient(45deg, #ffcc00, #ff9900);
+    background: linear-gradient(45deg, #9400D3, #8A2BE2); /* Violet gradient */
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -34,10 +29,9 @@ body, h1, h2, h3, p {
 }
 
 .learn-more.add {
-    background: linear-gradient(45deg, #ff9900, #ff6600);
+    background: linear-gradient(45deg, #9400D3, #8A2BE2); /* Violet gradient */
     color: #fff;
-    border: yellow;
-    /* border-radius: 5px; */
+    /* Remove the border property */
     padding: 16px 32px;
     font-weight: bold;
     cursor: pointer;
@@ -45,14 +39,13 @@ body, h1, h2, h3, p {
 }
 
 .learn-more.add:hover {
-    background: linear-gradient(45deg, #ff6600, #ff3300);
+    background: linear-gradient(45deg, #8A2BE2, #4B0082); /* Darker violet gradient on hover */
 }
 
 /* Style the note container */
 .note {
     background-color: #fff;
     border: 1px solid #ddd;
-    /* border-radius: 10px; */
     margin: 20px auto;
     max-width: 400px;
     padding: 20px;
@@ -75,33 +68,30 @@ body, h1, h2, h3, p {
 }
 
 .operation button:hover {
-    color: #ff9900;
+    color: #9400D3; /* Violet color on hover */
 }
 
 /* Style the textarea for notes */
 textarea {
     width: 94%;
-    /* border: none; */
     resize: vertical;
     min-height: 120px;
     padding: 12px;
     font-size: 16px;
-    /* border-radius: 10px; */
-    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
-    border: 1px solid #dbc441;
+    border: 1px solid #9400D3;
     font: inherit;
 }
 
 textarea:focus {
     background-color: #f9f9f9;
-    border: 2px solid #ff9900;
+    border: 2px solid #9400D3; /* Violet color on focus */
 }
+
 /* Style the edit and delete buttons */
 .edit, .delete {
-    background-color: #ff9900; /* Red background color for delete button */
-    color: #ff9900; /* White text color */
+    background-color: #9400D3; /* Violet background color */
+    color: #9400D3; /* White text color */
     border: none;
-    /* border-radius: 5px; */
     padding: 5px 10px;
     cursor: pointer;
     transition: background-color 0.3s; /* Add a smooth transition for background color */
@@ -119,7 +109,7 @@ textarea:focus {
 
 /* Change button background color on hover */
 .edit:hover, .delete:hover {
-    background-color: #ff9900; /* Darker red on hover for delete button */
+    background-color: #8A2BE2; /* Darker violet on hover */
 }
 
 /* Change icon color on hover */
