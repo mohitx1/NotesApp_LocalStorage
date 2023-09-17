@@ -1,6 +1,6 @@
 const addButton=document.querySelector('#add');
 
-update_LS_Data=()=>{
+const updateLSData=()=>{
     const textAreaData=document.querySelectorAll('textarea');
     const notes=[];
     // console.log(textAreaData);
@@ -40,9 +40,12 @@ const addNewNote=( text = '')=>{
     //deleting the node
     delButton.addEventListener('click',()=>{
         note.remove()
+        updateLSData();
     })
 
     //toggle using edit button
+    textArea.value=text;
+    mainDiv.innerHTML=text;
     
 
     editButton.addEventListener('click',()=>{
@@ -56,14 +59,18 @@ const addNewNote=( text = '')=>{
         // console.log(value);
         mainDiv.innerHTML=value;
 
-        update_LS_Data();
+        updateLSData();
     })
 
 
     document.body.appendChild(note);
 }
 
+//Getting data from LocalStorage
+const notes= JSON.parse(localStorage.getItem("notes"));
+
+if(notes){notes.forEach((note)=>addNewNote(note))}
 
 addButton.addEventListener('click',()=>{
-    addNewNote()
+    addNewNote();
 });
